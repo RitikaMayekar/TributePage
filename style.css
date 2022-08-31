@@ -1,0 +1,184 @@
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.stars {
+    background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 0;
+}
+
+.twinkling {
+    width: 10000px;
+    height: 100%;
+    background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+    background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+
+    -moz-animation: move-background 70s linear infinite;
+    -ms-animation: move-background 70s linear infinite;
+    -o-animation: move-background 70s linear infinite;
+    -webkit-animation: move-background 70s linear infinite;
+    animation: move-background 70s linear infinite;
+
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 90vw;
+    height: 90vh;
+    box-shadow: 0 0 10px 0 silver;
+    overflow-x: auto;
+}
+
+.main img {
+    user-select: none;
+}
+
+.main::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.main .data {
+    width: 90%;
+}
+
+.main .data {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+}
+
+.main .data h1 {
+    width: 90%;
+    align-self: center;
+    text-align: center;
+}
+
+.img-bio {
+    display: flex;
+}
+
+.img-bio .img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-bio .img img {
+    box-shadow: 0 0 10px 0 silver;
+    border-radius: 15px;
+}
+
+.img-bio .bio {
+    width: 50%;
+}
+
+.img-bio .bio p {
+    width: 90%;
+    max-width: 900px;
+    text-align: justify;
+}
+
+.main .fun {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.fun h1 {
+    position: sticky;
+    text-align: center;
+}
+
+.memories {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.memories img {
+    width: 50%;
+}
+
+.memories div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.memories div p {
+    width: 80%;
+}
+
+h1 {
+    box-shadow: 0 0 10px 0 silver;
+    border-radius: 15px;
+}
+
+@keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-moz-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
