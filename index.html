@@ -114,10 +114,18 @@
             </div>
         </div>
     </div>
-    <audio autoplay loop>
-        <source src="Hedwigs_Theme.mp3" type="audio/mpeg">
+    <audio loop id="myAudio">
+        <source src="theme.mp3" type="audio/mpeg">
     </audio>
     </div>
+    <script>
+        document.addEventListener("click",()=>{
+            document.getElementById('myAudio').play();
+        })
+        document.getElementsByClassName('main')[0].addEventListener("scroll",()=>{
+            document.getElementById('myAudio').play();
+        })
+    </script>
 </body>
 
 </html>
